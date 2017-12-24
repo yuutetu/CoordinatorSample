@@ -20,6 +20,9 @@
 		2076E9F31FEF5FFB0002E32C /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */; };
 		2076E9F51FEF64A30002E32C /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */; };
 		2076E9F81FEF65AB0002E32C /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F71FEF65AB0002E32C /* LoginManager.swift */; };
+		2076E9FC1FEF7BBC0002E32C /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9FB1FEF7BBC0002E32C /* NavigationCoordinator.swift */; };
+		2076E9FE1FEF80E70002E32C /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9FD1FEF80E70002E32C /* TransitionViewController.swift */; };
+		2076EA001FEF80F90002E32C /* TransitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2076E9FF1FEF80F90002E32C /* TransitionViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		2076E9F71FEF65AB0002E32C /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		2076E9FB1FEF7BBC0002E32C /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		2076E9FD1FEF80E70002E32C /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		2076E9FF1FEF80F90002E32C /* TransitionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitionViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 				2076E9ED1FEF54E00002E32C /* Coordinator.swift */,
 				2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */,
 				2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */,
+				2076E9FB1FEF7BBC0002E32C /* NavigationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				2076E9BC1FEF25A00002E32C /* ViewController.swift */,
+				2076E9FD1FEF80E70002E32C /* TransitionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				2076E9BE1FEF25A00002E32C /* ViewController.storyboard */,
+				2076E9FF1FEF80F90002E32C /* TransitionViewController.storyboard */,
 			);
 			path = Storybaords;
 			sourceTree = "<group>";
@@ -290,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2076EA001FEF80F90002E32C /* TransitionViewController.storyboard in Resources */,
 				2076E9C51FEF25A00002E32C /* LaunchScreen.storyboard in Resources */,
 				2076E9C21FEF25A00002E32C /* Assets.xcassets in Resources */,
 				2076E9C01FEF25A00002E32C /* ViewController.storyboard in Resources */,
@@ -320,7 +330,9 @@
 				2076E9EE1FEF54E00002E32C /* Coordinator.swift in Sources */,
 				2076E9F81FEF65AB0002E32C /* LoginManager.swift in Sources */,
 				2076E9BD1FEF25A00002E32C /* ViewController.swift in Sources */,
+				2076E9FE1FEF80E70002E32C /* TransitionViewController.swift in Sources */,
 				2076E9F01FEF5AAF0002E32C /* LoginCoordinator.swift in Sources */,
+				2076E9FC1FEF7BBC0002E32C /* NavigationCoordinator.swift in Sources */,
 				2076E9BB1FEF25A00002E32C /* AppDelegate.swift in Sources */,
 				2076E9EB1FEF268B0002E32C /* ApplicationCoordinator.swift in Sources */,
 				2076E9F51FEF64A30002E32C /* MainTabBarCoordinator.swift in Sources */,
