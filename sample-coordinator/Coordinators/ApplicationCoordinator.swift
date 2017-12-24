@@ -9,9 +9,25 @@
 import UIKit
 
 class ApplicationCoordinator: Coordinator {
+    enum State {
+        case login
+        case main
+    }
+
     let window: UIWindow
     let loginCoordinator: LoginCoordinator
     let mainCoordinator: MainCoordinator
+    private var state: State?
+    var currentCoordinator: Coordinator? {
+        switch state {
+        case .none:
+            return nil
+        case .some(.main):
+            return mainCoordinator
+        case .some(.login):
+            return loginCoordinator
+        }
+    }
     
     init(window: UIWindow) {
         self.window = window
@@ -29,8 +45,10 @@ class ApplicationCoordinator: Coordinator {
     
     private func updateUsingCoordinator() {
         if LoginManager.shared.isLoggedIn {
+            state = .main
             mainCoordinator.start()
         } else {
+            state = .login
             loginCoordinator.start()
         }
     }
