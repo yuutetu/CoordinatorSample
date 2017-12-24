@@ -12,6 +12,7 @@ protocol TransitionDelegate: class {
     func push()
     func pop()
     func popToRoot()
+    func startFlow()
 }
 
 class TransitionViewController: UIViewController {
@@ -46,5 +47,9 @@ class TransitionViewController: UIViewController {
     
     @IBAction func popToRoot() {
         delegate?.popToRoot()
+    }
+    
+    @IBAction func startFlow() {
+        delegate?.startFlow()
     }
 }

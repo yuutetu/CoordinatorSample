@@ -40,4 +40,9 @@ class NavigationCoordinator: Coordinator, TransitionDelegate {
     func popToRoot() {
         navigationController.popToRootViewController(animated: true)
     }
+    
+    func startFlow() {
+        let coordinator = FlowCoordinator(navigationController: navigationController)
+        coordinator.start()
+    }
 }

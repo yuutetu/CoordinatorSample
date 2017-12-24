@@ -23,6 +23,7 @@
 		2076E9FC1FEF7BBC0002E32C /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9FB1FEF7BBC0002E32C /* NavigationCoordinator.swift */; };
 		2076E9FE1FEF80E70002E32C /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9FD1FEF80E70002E32C /* TransitionViewController.swift */; };
 		2076EA001FEF80F90002E32C /* TransitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2076E9FF1FEF80F90002E32C /* TransitionViewController.storyboard */; };
+		2076EA021FEF88700002E32C /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076EA011FEF88700002E32C /* FlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		2076E9FB1FEF7BBC0002E32C /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		2076E9FD1FEF80E70002E32C /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		2076E9FF1FEF80F90002E32C /* TransitionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitionViewController.storyboard; sourceTree = "<group>"; };
+		2076EA011FEF88700002E32C /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */,
 				2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */,
 				2076E9FB1FEF7BBC0002E32C /* NavigationCoordinator.swift */,
+				2076EA011FEF88700002E32C /* FlowCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2076E9EE1FEF54E00002E32C /* Coordinator.swift in Sources */,
+				2076EA021FEF88700002E32C /* FlowCoordinator.swift in Sources */,
 				2076E9F81FEF65AB0002E32C /* LoginManager.swift in Sources */,
 				2076E9BD1FEF25A00002E32C /* ViewController.swift in Sources */,
 				2076E9FE1FEF80E70002E32C /* TransitionViewController.swift in Sources */,

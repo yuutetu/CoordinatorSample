@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var buttonContainerStackView: UIStackView!
     private var text: String!
-    private var buttonModels: [ButtonModel] = []
+    var buttonModels: [ButtonModel] = []
     
     static func viewController(with text: String, buttonModels: [ButtonModel]) -> ViewController {
         let viewController = UIStoryboard(name: "ViewController", bundle: nil).instantiateInitialViewController() as! ViewController
