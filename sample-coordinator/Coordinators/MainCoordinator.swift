@@ -8,20 +8,20 @@
 
 import UIKit
 
-class MainCoordinator: Coordinator {
+class MainTabBarCoordinator: Coordinator {
     let window: UIWindow
-    let honeViewController: UIViewController
+    let homeViewController: UIViewController
     
     init(window: UIWindow) {
         self.window = window
-        self.honeViewController = ViewController.viewController(
+        self.homeViewController = ViewController.viewController(
             with: "Home View",
             buttonModels: []
         )
     }
     
     func start() {
-        window.rootViewController = honeViewController
+        window.rootViewController = homeViewController
         window.makeKeyAndVisible()
     }
 }

@@ -16,9 +16,9 @@ class ApplicationCoordinator: Coordinator {
 
     let window: UIWindow
     let loginCoordinator: LoginCoordinator
-    let mainCoordinator: MainCoordinator
+    let mainCoordinator: MainTabBarCoordinator
     private var state: State?
-    var currentCoordinator: Coordinator? {
+    private var currentCoordinator: Coordinator? {
         switch state {
         case .none:
             return nil
@@ -32,7 +32,7 @@ class ApplicationCoordinator: Coordinator {
     init(window: UIWindow) {
         self.window = window
         loginCoordinator = LoginCoordinator(window: window)
-        mainCoordinator = MainCoordinator(window: window)
+        mainCoordinator = MainTabBarCoordinator(window: window)
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "LoginManagerLoginStateChanged"), object: nil, queue: nil) { _ in
             self.updateUsingCoordinator()

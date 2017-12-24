@@ -18,7 +18,7 @@
 		2076E9EE1FEF54E00002E32C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9ED1FEF54E00002E32C /* Coordinator.swift */; };
 		2076E9F01FEF5AAF0002E32C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */; };
 		2076E9F31FEF5FFB0002E32C /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */; };
-		2076E9F51FEF64A30002E32C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F41FEF64A30002E32C /* MainCoordinator.swift */; };
+		2076E9F51FEF64A30002E32C /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */; };
 		2076E9F81FEF65AB0002E32C /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F71FEF65AB0002E32C /* LoginManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		2076E9ED1FEF54E00002E32C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
-		2076E9F41FEF64A30002E32C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		2076E9F71FEF65AB0002E32C /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 				2076E9EA1FEF268B0002E32C /* ApplicationCoordinator.swift */,
 				2076E9ED1FEF54E00002E32C /* Coordinator.swift */,
 				2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */,
-				2076E9F41FEF64A30002E32C /* MainCoordinator.swift */,
+				2076E9F41FEF64A30002E32C /* MainTabBarCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 				2076E9F01FEF5AAF0002E32C /* LoginCoordinator.swift in Sources */,
 				2076E9BB1FEF25A00002E32C /* AppDelegate.swift in Sources */,
 				2076E9EB1FEF268B0002E32C /* ApplicationCoordinator.swift in Sources */,
-				2076E9F51FEF64A30002E32C /* MainCoordinator.swift in Sources */,
+				2076E9F51FEF64A30002E32C /* MainTabBarCoordinator.swift in Sources */,
 				2076E9F31FEF5FFB0002E32C /* ClosureButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
