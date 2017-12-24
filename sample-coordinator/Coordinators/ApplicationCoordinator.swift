@@ -18,16 +18,6 @@ class ApplicationCoordinator: Coordinator {
     let loginCoordinator: LoginCoordinator
     let mainCoordinator: MainTabBarCoordinator
     private var state: State?
-    private var currentCoordinator: Coordinator? {
-        switch state {
-        case .none:
-            return nil
-        case .some(.main):
-            return mainCoordinator
-        case .some(.login):
-            return loginCoordinator
-        }
-    }
     
     init(window: UIWindow) {
         self.window = window
@@ -50,6 +40,18 @@ class ApplicationCoordinator: Coordinator {
         } else {
             state = .login
             loginCoordinator.start()
+        }
+    }
+
+    // 下記のコードでFlowCoordinatorでの画面遷移を開始する。
+    // (UIApplication.shared.delegate as? AppDelegate)?.applicationCoordinator?.startFlow()
+    // 実際にはURLSchemeを引数に与えて遷移する実装をするといいかもしれない。
+    func startFlow() {
+        switch state {
+        case .some(.main):
+            mainCoordinator.startFlow()
+        default:
+            return // Main Interfaceのときのみ開ける
         }
     }
 }

@@ -14,6 +14,18 @@ class MainTabBarCoordinator: Coordinator {
     let leftCoordinator: NavigationCoordinator
     let centerCoordinator: NavigationCoordinator
     let rightCoordinator: NavigationCoordinator
+    private var currentCoordinator: NavigationCoordinator? {
+        switch tabBarViewController.selectedIndex {
+        case 0:
+            return leftCoordinator
+        case 1:
+            return centerCoordinator
+        case 2:
+            return rightCoordinator
+        default:
+            return nil
+        }
+    }
     
     init(window: UIWindow) {
         self.window = window
@@ -44,5 +56,9 @@ class MainTabBarCoordinator: Coordinator {
         leftCoordinator.start()
         centerCoordinator.start()
         rightCoordinator.start()
+    }
+    
+    func startFlow() {
+        currentCoordinator?.startFlow()
     }
 }
