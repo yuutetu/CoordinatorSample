@@ -18,16 +18,23 @@ class MainTabBarCoordinator: Coordinator {
     init(window: UIWindow) {
         self.window = window
         self.tabBarViewController = UITabBarController()
-        self.leftCoordinator = NavigationCoordinator(text: "Left View")
-        leftCoordinator.navigationController.tabBarItem = UITabBarItem(title: "Left", image: nil, selectedImage: nil)
-        self.centerCoordinator = NavigationCoordinator(text: "Center View")
-        centerCoordinator.navigationController.tabBarItem = UITabBarItem(title: "Center", image: nil, selectedImage: nil)
-        self.rightCoordinator = NavigationCoordinator(text: "Right View")
-        rightCoordinator.navigationController.tabBarItem = UITabBarItem(title: "Right", image: nil, selectedImage: nil)
+        
+        let leftNavigationController = UINavigationController()
+        leftNavigationController.tabBarItem = UITabBarItem(title: "Left", image: nil, selectedImage: nil)
+        self.leftCoordinator = NavigationCoordinator(navigationController: leftNavigationController, text: "Left View")
+        
+        let centerNavigationController = UINavigationController()
+        centerNavigationController.tabBarItem = UITabBarItem(title: "Center", image: nil, selectedImage: nil)
+        self.centerCoordinator = NavigationCoordinator(navigationController: centerNavigationController, text: "Center View")
+        
+        let rightNavigationController = UINavigationController()
+        rightNavigationController.tabBarItem = UITabBarItem(title: "Right", image: nil, selectedImage: nil)
+        self.rightCoordinator = NavigationCoordinator(navigationController: rightNavigationController, text: "Right View")
+        
         tabBarViewController.viewControllers = [
-            leftCoordinator.navigationController,
-            centerCoordinator.navigationController,
-            rightCoordinator.navigationController
+            leftNavigationController,
+            centerNavigationController,
+            rightNavigationController
         ]
     }
     

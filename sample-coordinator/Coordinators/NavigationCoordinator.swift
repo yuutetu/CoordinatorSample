@@ -13,9 +13,9 @@ class NavigationCoordinator: Coordinator, TransitionDelegate {
     let navigationController: UINavigationController
     let rootViewController: UIViewController
     
-    init(text: String) {
+    init(navigationController: UINavigationController, text: String) {
         self.text = text
-        self.navigationController = UINavigationController()
+        self.navigationController = navigationController
         let rootViewController: TransitionViewController = TransitionViewController.viewController(with: text)
         self.rootViewController = rootViewController
         rootViewController.delegate = self
