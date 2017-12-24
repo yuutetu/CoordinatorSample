@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		2076E9BB1FEF25A00002E32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9BA1FEF25A00002E32C /* AppDelegate.swift */; };
 		2076E9BD1FEF25A00002E32C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9BC1FEF25A00002E32C /* ViewController.swift */; };
-		2076E9C01FEF25A00002E32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2076E9BE1FEF25A00002E32C /* Main.storyboard */; };
+		2076E9C01FEF25A00002E32C /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2076E9BE1FEF25A00002E32C /* ViewController.storyboard */; };
 		2076E9C21FEF25A00002E32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2076E9C11FEF25A00002E32C /* Assets.xcassets */; };
 		2076E9C51FEF25A00002E32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2076E9C31FEF25A00002E32C /* LaunchScreen.storyboard */; };
 		2076E9D01FEF25A00002E32C /* sample_coordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9CF1FEF25A00002E32C /* sample_coordinatorTests.swift */; };
 		2076E9DB1FEF25A00002E32C /* sample_coordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9DA1FEF25A00002E32C /* sample_coordinatorUITests.swift */; };
+		2076E9EB1FEF268B0002E32C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9EA1FEF268B0002E32C /* ApplicationCoordinator.swift */; };
+		2076E9EE1FEF54E00002E32C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9ED1FEF54E00002E32C /* Coordinator.swift */; };
+		2076E9F01FEF5AAF0002E32C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */; };
+		2076E9F31FEF5FFB0002E32C /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */; };
+		2076E9F51FEF64A30002E32C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F41FEF64A30002E32C /* MainCoordinator.swift */; };
+		2076E9F81FEF65AB0002E32C /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076E9F71FEF65AB0002E32C /* LoginManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,7 @@
 		2076E9B71FEF25A00002E32C /* sample-coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2076E9BA1FEF25A00002E32C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2076E9BC1FEF25A00002E32C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2076E9BF1FEF25A00002E32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2076E9BF1FEF25A00002E32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
 		2076E9C11FEF25A00002E32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2076E9C41FEF25A00002E32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2076E9C61FEF25A00002E32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		2076E9D61FEF25A00002E32C /* sample-coordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-coordinatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2076E9DA1FEF25A00002E32C /* sample_coordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_coordinatorUITests.swift; sourceTree = "<group>"; };
 		2076E9DC1FEF25A00002E32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2076E9EA1FEF268B0002E32C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		2076E9ED1FEF54E00002E32C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
+		2076E9F41FEF64A30002E32C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2076E9F71FEF65AB0002E32C /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +109,12 @@
 		2076E9B91FEF25A00002E32C /* sample-coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				2076E9F61FEF659F0002E32C /* Managers */,
+				2076E9F11FEF5FB30002E32C /* Views */,
+				2076E9EC1FEF53DE0002E32C /* Storybaords */,
+				2076E9E91FEF263D0002E32C /* Controllers */,
+				2076E9E81FEF262E0002E32C /* Coordinators */,
 				2076E9BA1FEF25A00002E32C /* AppDelegate.swift */,
-				2076E9BC1FEF25A00002E32C /* ViewController.swift */,
-				2076E9BE1FEF25A00002E32C /* Main.storyboard */,
 				2076E9C11FEF25A00002E32C /* Assets.xcassets */,
 				2076E9C31FEF25A00002E32C /* LaunchScreen.storyboard */,
 				2076E9C61FEF25A00002E32C /* Info.plist */,
@@ -123,6 +138,49 @@
 				2076E9DC1FEF25A00002E32C /* Info.plist */,
 			);
 			path = "sample-coordinatorUITests";
+			sourceTree = "<group>";
+		};
+		2076E9E81FEF262E0002E32C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2076E9EA1FEF268B0002E32C /* ApplicationCoordinator.swift */,
+				2076E9ED1FEF54E00002E32C /* Coordinator.swift */,
+				2076E9EF1FEF5AAF0002E32C /* LoginCoordinator.swift */,
+				2076E9F41FEF64A30002E32C /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2076E9E91FEF263D0002E32C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2076E9BC1FEF25A00002E32C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2076E9EC1FEF53DE0002E32C /* Storybaords */ = {
+			isa = PBXGroup;
+			children = (
+				2076E9BE1FEF25A00002E32C /* ViewController.storyboard */,
+			);
+			path = Storybaords;
+			sourceTree = "<group>";
+		};
+		2076E9F11FEF5FB30002E32C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2076E9F21FEF5FFB0002E32C /* ClosureButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2076E9F61FEF659F0002E32C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2076E9F71FEF65AB0002E32C /* LoginManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +292,7 @@
 			files = (
 				2076E9C51FEF25A00002E32C /* LaunchScreen.storyboard in Resources */,
 				2076E9C21FEF25A00002E32C /* Assets.xcassets in Resources */,
-				2076E9C01FEF25A00002E32C /* Main.storyboard in Resources */,
+				2076E9C01FEF25A00002E32C /* ViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2076E9EE1FEF54E00002E32C /* Coordinator.swift in Sources */,
+				2076E9F81FEF65AB0002E32C /* LoginManager.swift in Sources */,
 				2076E9BD1FEF25A00002E32C /* ViewController.swift in Sources */,
+				2076E9F01FEF5AAF0002E32C /* LoginCoordinator.swift in Sources */,
 				2076E9BB1FEF25A00002E32C /* AppDelegate.swift in Sources */,
+				2076E9EB1FEF268B0002E32C /* ApplicationCoordinator.swift in Sources */,
+				2076E9F51FEF64A30002E32C /* MainCoordinator.swift in Sources */,
+				2076E9F31FEF5FFB0002E32C /* ClosureButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +360,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2076E9BE1FEF25A00002E32C /* Main.storyboard */ = {
+		2076E9BE1FEF25A00002E32C /* ViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2076E9BF1FEF25A00002E32C /* Base */,
 			);
-			name = Main.storyboard;
+			name = ViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		2076E9C31FEF25A00002E32C /* LaunchScreen.storyboard */ = {
@@ -427,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CAQREKNXC;
 				INFOPLIST_FILE = "sample-coordinator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.yuutetu.sample-coordinator";
@@ -441,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CAQREKNXC;
 				INFOPLIST_FILE = "sample-coordinator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.yuutetu.sample-coordinator";
