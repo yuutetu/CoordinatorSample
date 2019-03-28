@@ -1,2 +1,4 @@
 # CoordinatorSample
 ApplicationCoordinatorを使った画面遷移の実装例
+
+aaaaa
